@@ -1,0 +1,1688 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>Multi-Agent Systems - 人工智能初学者课程</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#multi-agent-systems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="人工智能初学者课程" class="md-header__button md-logo" aria-label="人工智能初学者课程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人工智能初学者课程
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Multi-Agent Systems
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="人工智能初学者课程" class="md-nav__button md-logo" aria-label="人工智能初学者课程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人工智能初学者课程
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课程介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    课程设置
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/for-teachers_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    给教育者
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/how-to-run_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何运行代码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/setup_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始使用这个课程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    人工智能简介
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            人工智能简介
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Intro/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    人工智能简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Intro/assignment_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游戏开发马拉松
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    知识表示与专家系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            知识表示与专家系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Symbolic/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识表示与专家系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Symbolic/assignment_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    构建一个本体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    神经网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            神经网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/03-Perceptron/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络入门：感知器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/04-OwnFramework/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络介绍. 多层感知器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/05-Frameworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络框架
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机视觉
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            计算机视觉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/06-IntroCV/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机视觉简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    卷积神经网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            卷积神经网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/07-ConvNets/CNN_Architectures_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    著名的 CNN 架构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/07-ConvNets/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    卷积神经网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    迁移学习
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            迁移学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/08-TransferLearning/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    预训练网络和迁移学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    深度学习训练技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/09-Autoencoders/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    自动编码器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/10-GANs/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    生成对抗网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/11-ObjectDetection/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    目标检测
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/12-Segmentation/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分割
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    自然语言处理
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            自然语言处理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/13-TextRep/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    将文本表示为张量
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/14-Embeddings/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    嵌入
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/15-LanguageModeling/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语言建模
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/16-RNN/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    循环神经网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/17-GenerativeNetworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    生成网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/18-Transformers/READMEtransformers_chs" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注意机制和Transformer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/19-NER/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命名实体识别
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/20-LangModels/READMELargeLang_chs" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    预训练大语言模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    其他技术
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            其他技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-GeneticAlgorithms/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    遗传算法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-DeepRL/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    深度强化学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多智能体系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI伦理
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            AI伦理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Ethics/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    道德与负责任的人工智能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    多模态网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            多模态网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Extras/X1-MultiModal/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多模态网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-lecture-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-lecture quiz
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netlogo" class="md-nav__link">
+    <span class="md-ellipsis">
+      NetLogo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NetLogo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#models-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      Models Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Principles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flocking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flocking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-models-to-see" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Models to see
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deliberative-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deliberative Agents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Challenge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-lecture-quiz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-lecture quiz
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-self-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review &amp; Self Study
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#netlogo-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      NetLogo Assignment
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="multi-agent-systems">Multi-Agent Systems</h1>
+<p>One of the possible ways of achieving intelligence is so-called <strong>emergent</strong> (or <strong>synergetic</strong>) approach, which is based on the fact that the combined behavior of many relatively simple agents can result in the overall more complex (or intelligent) behavior of the system as a whole. Theoretically, this is based on the principles of <a href="https://en.wikipedia.org/wiki/Collective_intelligence">Collective Intelligence</a>, <a href="https://en.wikipedia.org/wiki/Global_brain">Emergentism</a> and <a href="https://en.wikipedia.org/wiki/Global_brain">Evolutionary Cybernetics</a>, which state that higher-level systems gain some sort of added value when being properly combined from lower-level systems (so-called <em>principle of metasystem transition</em>).</p>
+<h2 id="pre-lecture-quiz"><a href="https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/123">Pre-lecture quiz</a></h2>
+<p>The direction of <strong>Multi-Agent Systems</strong> has emerged in AI in 1990s as a response to growth of the Internet and distributed systems. On of the classical AI textbooks, <a href="https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach">Artificial Intelligence: A Modern Approach</a>, focuses on the view of classical AI from the point of view of Multi-agent systems.</p>
+<p>Central to Multi-agent approach is the notion of <strong>Agent</strong> - an entity that lives in some <strong>environment</strong>, which it can perceive, and act upon. This is a very broad definition, and there could be many different types and classifications of agents:</p>
+<ul>
+<li>By their ability to reason:</li>
+<li><strong>Reactive</strong> agents usually have simple request-response type of behavior</li>
+<li><strong>Deliberative</strong> agents employ some sort of logical reasoning and/or planning capabilities</li>
+<li>By the place where agent execute its code:</li>
+<li><strong>Static</strong> agents work on a dedicated network node</li>
+<li><strong>Mobile</strong> agents can move their code between network nodes</li>
+<li>By their behavior:</li>
+<li><strong>Passive agents</strong> do not have specific goals. Such agents can react to external stimuli, but will not initiate any actions themselves. </li>
+<li><strong>Active agents</strong> have some goals which they pursue</li>
+<li><strong>Cognitive agents</strong> involve complex planning and reasoning</li>
+</ul>
+<p>Multi-agent systems are nowadays used in a number of applications:</p>
+<ul>
+<li>In games, many non-player characters employ some sort of AI, and can be considered to be intelligent agents</li>
+<li>In video production, rendering complex 3D scenes that involve crowds is typically done using multi-agent simulation</li>
+<li>In systems modeling, multi-agent approach is used to simulate the behavior of a complex model. For example, multi-agent approach has been successfully used to predict the spread of COVID-19 disease worldwide. Similar approach can be used to model traffic in the city, and see how it reacts to changes in traffic rules.</li>
+<li>In complex automation systems, each device can act as an independent agent, which makes the whole system less monolith and more robust.</li>
+</ul>
+<p>We will not spend a lot of time going deep into multi-agent systems, but consider one example of <strong>Multi-Agent Modeling</strong>.</p>
+<h2 id="netlogo">NetLogo</h2>
+<p><a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> is a multi-agent modeling environment based on a modified version of the <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a> programming language. This language was developed for teaching programming concepts to kids, and it allows you to control an agent called <strong>turtle</strong>, which can move, leaving a trace behind. This allows creating complex geometric figures, which is a very visual way to understand the behavior of an agent.</p>
+<p>In NetLogo, we can create many turtles by using the <code>create-turtles</code> command. We can then command all turtles to do some actions (in the example below - more 10 point forward):</p>
+<pre><code>create-turtles 10
+ask turtles [
+  forward 10
+]
+</code></pre>
+<p>Of course, it is not interesting when all turtles do the same thing, so we can <code>ask</code> groups of turtles, eg. those who are in the vicinity of a certain point. We can also create turtles of different <em>breeds</em> using <code>breed [cats cat]</code> command. Here <code>cat</code> is the name of a breed, and we need to specify both singular and plural word, because different commands use different forms for clarity.</p>
+<blockquote>
+<p>✅ We will not go into learning the NetLogo language itself - you can visit the brilliant <a href="https://ccl.northwestern.edu/netlogo/bind/">Beginner's Interactive NetLogo Dictionary</a> resource if you are interested in learning more.</p>
+</blockquote>
+<p>You can <a href="https://ccl.northwestern.edu/netlogo/download.shtml">download</a> and install NetLogo to try it.</p>
+<h3 id="models-library">Models Library</h3>
+<p>A great thing about NetLogo is that it contains a library of working models that you can try. Go to <strong>File &rightarrow; Models Library</strong>, and you have many categories of models to choose from.</p>
+<p><img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/></p>
+<blockquote>
+<p>A screenshot of the models library by Dmitry Soshnikov</p>
+</blockquote>
+<p>You can open one of the models, for example <strong>Biology &rightarrow; Flocking</strong>.</p>
+<h3 id="main-principles">Main Principles</h3>
+<p>After opening the model, you are taken to the main NetLogo screen. Here is a sample model that describes the population of wolves and sheep, given finite resources (grass).</p>
+<p><img alt="NetLogo Main Screen" src="images/NetLogo-Main.png" /></p>
+<blockquote>
+<p>Screenshot by Dmitry Soshnikov</p>
+</blockquote>
+<p>On this screen, you can see:</p>
+<ul>
+<li>The <strong>Interface</strong> section which contains:</li>
+<li>The main field, where all agents live</li>
+<li>Different controls: buttons, sliders, etc.</li>
+<li>Graphs that you can use to display parameters of the simulation</li>
+<li>The <strong>Code</strong> tab which contains the editor, where you can type NetLogo program</li>
+</ul>
+<p>In most cases, the interface would have a <strong>Setup</strong> button, which initializes the simulation state, and a <strong>Go</strong> button that starts the execution. Those are handled by corresponding handlers in the code that look like this:</p>
+<pre><code>to go [
+...
+]
+</code></pre>
+<p>NetLogo's world consists of the following objects:</p>
+<ul>
+<li><strong>Agents</strong> (turtles) that can move across the field and do something. You command agents by using <code>ask turtles [...]</code> syntax, and the code in brackets is executed by all agents in <em>turtle mode</em>.</li>
+<li><strong>Patches</strong> are square areas of the field, on which agents live. You can refer to all agents on the same patch, or you can change patch colors and some other properties. You can also <code>ask patches</code> to do something.</li>
+<li><strong>Observer</strong> is a unique agent that controls the world. All button handlers are executed in <em>observer mode</em>.</li>
+</ul>
+<blockquote>
+<p>✅ The beauty of a multi-agent environment is that the code that runs in turtle mode or in patch mode is executed at the same time by all agents in parallel. Thus, by writing a little code and programming the behavior of individual agent, you can create complex behavior of the simulation system as a whole.</p>
+</blockquote>
+<h3 id="flocking">Flocking</h3>
+<p>As an example of multi-agent behavior, let's consider <strong><a href="https://en.wikipedia.org/wiki/Flocking_(behavior)">Flocking</a></strong>. Flocking is a complex pattern that is very similar to how flocks of birds fly. Watching them fly you can think that they follow some kind of collective algorithm, or that they possess some form of <em>collective intelligence</em>. However, this complex behavior arises when each individual agent (in this case, a <em>bird</em>) only observes some other agents in a short distance from it, and follows three simple rules:</p>
+<ul>
+<li><strong>Alignment</strong> - it steers towards the average heading of neighboring agents</li>
+<li><strong>Cohesion</strong> - it tries to steer towards the average position of neighbors (<em>long range attraction</em>)</li>
+<li><strong>Separation</strong> - when getting too close to other birds, it tries to move away (<em>short range repulsion</em>)</li>
+</ul>
+<p>You can run the flocking example and observe the behavior. You can also adjust parameters, such as <em>degree of separation</em>, or the <em>viewing range</em>, which defines how far each bird can see. Note that if you decrease the viewing range to 0, all birds become blind, and flocking stops. If you decrease separation to 0, all birds gather into a straight line.</p>
+<blockquote>
+<p>✅ Switch to the <strong>Code</strong> tab and see where three rules of flocking (alignment, cohesion and separation) are implemented in code. Note how we refer only to those agents that are in sight.</p>
+</blockquote>
+<h3 id="other-models-to-see">Other Models to see</h3>
+<p>There are a few more interesting models that you can experiment with:</p>
+<ul>
+<li><strong>Art &rightarrow; Fireworks</strong> shows how a firework can be considered a collective behavior of individual fire streams</li>
+<li><strong>Social Science &rightarrow; Traffic Basic</strong> and <strong>Social Science &rightarrow; Traffic Grid</strong> show the model of city traffic in 1D and 2D Grid with or without traffic lights. Each car in the simulation follows the following rules:</li>
+<li>If the space in front of it is empty - accelerate (up to a certain max speed)</li>
+<li>If it sees the obstacle in front - brake (and you can adjust how far a driver can see)</li>
+<li><strong>Social Science &rightarrow; Party</strong> shows how people group together during a cocktail party. You can find the combination of parameters that lead to the fastest increase of happiness of the group.</li>
+</ul>
+<p>As you can see from these examples, multi-agent simulations can be quite a useful way to understand the behavior of a complex system consisting of individuals that follow the same or similar logic. It can also be used to control virtual agents, such as <a href="https://en.wikipedia.org/wiki/NPC">NPCs</a> in computer games, or agents in 3D animated worlds.</p>
+<h2 id="deliberative-agents">Deliberative Agents</h2>
+<p>The agents described above are very simple, reacting to changes in environment using some kind of algorithm. As such they are <strong>reactive agents</strong>. However, sometimes agents can reason and plan their action, in which case they are called <strong>deliberative</strong>.</p>
+<p>A typical example would be a personal agent that receives an instruction from a human to book a vacation tour. Suppose that there are many agents that live on the internet, who can help it. It should then contact other agents to see which flights are available, what are the hotel prices for different dates, and try to negotiate the best price. When the vacation plan is complete and confirmed by the owner, it can proceed with booking.</p>
+<p>In order to do that, agents need to <strong>communicate</strong>. For successful communication they need:</p>
+<ul>
+<li>Some <strong>standard languages to exchange knowledge</strong>, such as <a href="https://en.wikipedia.org/wiki/Knowledge_Interchange_Format">Knowledge Interchange Format</a> (KIF) and <a href="https://en.wikipedia.org/wiki/Knowledge_Query_and_Manipulation_Language">Knowledge Query and Manipulation Language</a> (KQML). Those languages are designed based on <a href="https://en.wikipedia.org/wiki/Speech_act">Speech Act theory</a>.</li>
+<li>Those languages should also include some <strong>protocols for negotiations</strong>, based on different <strong>auction types</strong>.</li>
+<li>A <strong>common ontology</strong> to use, so that they refer to the same concepts knowing their semantics</li>
+<li>A way to <strong>discover</strong> what different agents can do, also based on some sort of ontology</li>
+</ul>
+<p>Deliberative agents are much more complex than reactive, because they do not only react to changes in environment, they should also be able to <em>intiate</em> actions. One of the proposed architectures for deliberative agents is the so-called Belief-Desire-Intention (BDI) agent:</p>
+<ul>
+<li><strong>Beliefs</strong> form a set of knowledge about an agent's environment. It can be structured as a knowledge base or set of rules that an agent can apply to a specific situation in the environment.</li>
+<li><strong>Desires</strong> define what an agent wants to do, i.e. its goals. For example, the goal of the personal assistant agent above is to book a tour, and the goal of a hotel agent is to maximize profit.</li>
+<li><strong>Intentions</strong> are specific actions that an agent plans to achieve its goals. Actions typically change the environment and cause communication with other agents.</li>
+</ul>
+<p>There are some platforms available for building multi-agent systems, such as <a href="https://jade.tilab.com/">JADE</a>. <a href="https://arxiv.org/ftp/arxiv/papers/2007/2007.08961.pdf">This paper</a> contains a review of multi-agent platforms, together with a brief history of multi-agent systems and their different usage scenarios.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Multi-Agent systems can take very different forms and be used in many different applications. 
+They all tend to focus on the simpler behavior of an individual agent, and achieve more complex behavior of the overall system due to <strong>synergetic effect</strong>.</p>
+<h2 id="challenge">🚀 Challenge</h2>
+<p>Take this lesson to the real world and try to conceptualize a multi-agent system that can solve a problem. What, for example, would a multi-agent system need to do to optimize a school bus route? How could it work in a bakery?</p>
+<h2 id="post-lecture-quiz"><a href="https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/223">Post-lecture quiz</a></h2>
+<h2 id="review-self-study">Review &amp; Self Study</h2>
+<p>Review the use of this type of system in industry. Pick a domain such as manufacturing or the video game industry and discover how multi-agent systems can be used to solve unique problems.</p>
+<h2 id="netlogo-assignment"><a href="assignment_chs/">NetLogo Assignment</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

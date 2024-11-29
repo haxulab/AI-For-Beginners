@@ -1,0 +1,2064 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../1-Intro/assignment_chs/">
+      
+      
+        <link rel="next" href="../assignment_chs/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.46">
+    
+    
+      
+        <title>知识表示与专家系统 - 人工智能初学者课程</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="人工智能初学者课程" class="md-header__button md-logo" aria-label="人工智能初学者课程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人工智能初学者课程
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              知识表示与专家系统
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="人工智能初学者课程" class="md-nav__button md-logo" aria-label="人工智能初学者课程" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人工智能初学者课程
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课程介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    课程设置
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程设置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/for-teachers_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    给教育者
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/how-to-run_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何运行代码
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../0-course-setup/setup_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始使用这个课程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    人工智能简介
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            人工智能简介
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Intro/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    人工智能简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Intro/assignment_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    游戏开发马拉松
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    知识表示与专家系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            知识表示与专家系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    知识表示与专家系统
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    知识表示与专家系统
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      课前测验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识表示
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机知识表示的分类
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      专家系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="专家系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      前向推理与后向推理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      实现专家系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：动物推理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      本体论与语义网
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：一个家庭本体论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-concept-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Concept Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：概念图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 挑战
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      课后测验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      复习与自学
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assignment_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    构建一个本体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    神经网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            神经网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络介绍
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/03-Perceptron/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络入门：感知器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/04-OwnFramework/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络介绍. 多层感知器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-NeuralNetworks/05-Frameworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络框架
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机视觉
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            计算机视觉
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/06-IntroCV/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    计算机视觉简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    卷积神经网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            卷积神经网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/07-ConvNets/CNN_Architectures_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    著名的 CNN 架构
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/07-ConvNets/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    卷积神经网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    迁移学习
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            迁移学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/08-TransferLearning/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    预训练网络和迁移学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    深度学习训练技巧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/09-Autoencoders/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    自动编码器
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/10-GANs/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    生成对抗网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/11-ObjectDetection/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    目标检测
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-ComputerVision/12-Segmentation/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    分割
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    自然语言处理
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            自然语言处理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/13-TextRep/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    将文本表示为张量
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/14-Embeddings/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    嵌入
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/15-LanguageModeling/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语言建模
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/16-RNN/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    循环神经网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/17-GenerativeNetworks/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    生成网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/18-Transformers/READMEtransformers_chs" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    注意机制和Transformer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/19-NER/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命名实体识别
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-NLP/20-LangModels/READMELargeLang_chs" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    预训练大语言模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    其他技术
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            其他技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Other/21-GeneticAlgorithms/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    遗传算法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Other/22-DeepRL/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    深度强化学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Other/23-MultiagentSystems/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多智能体系统
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI伦理
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            AI伦理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Ethics/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    道德与负责任的人工智能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    多模态网络
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            多模态网络
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../X-Extras/X1-MultiModal/README_chs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多模态网络
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      课前测验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      知识表示
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机知识表示的分类
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      专家系统
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="专家系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      前向推理与后向推理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      实现专家系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：动物推理
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      本体论与语义网
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：一个家庭本体论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microsoft-concept-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Concept Graph
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✍️ 练习：概念图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      结论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 挑战
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      课后测验
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      复习与自学
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="_1">知识表示与专家系统</h1>
+<p><img alt="Symbolic AI 内容总结" src="../../sketchnotes/ai-symbolic.png" /></p>
+<blockquote>
+<p>由 <a href="https://twitter.com/girlie_mac">Tomomi Imura</a> 绘制的速记</p>
+</blockquote>
+<p>对人工智能的探索基于对知识的追求，希望能够像人类一样理解世界。但如何实现这一目标呢？</p>
+<h2 id="_2"><a href="https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/102">课前测验</a></h2>
+<p>在人工智能的早期，创建智能系统的自上而下的方法（在前一课中讨论过）非常流行。其思想是从人们那里提取知识，转化为机器可读的形式，然后用它来自动解决问题。这种方法基于两大思想：</p>
+<ul>
+<li>知识表示</li>
+<li>推理</li>
+</ul>
+<h2 id="_3">知识表示</h2>
+<p>符号 AI 中的重要概念之一是 <strong>知识</strong>。重要的是将知识与<em>信息</em>或<em>数据</em>区分开。例如，我们可以说书籍包含知识，因为我们可以通过学习书籍成为专家。然而，书籍中真正包含的是<em>数据</em>，通过阅读书籍并将这些数据整合到我们的世界模型中，我们将数据转化为知识。</p>
+<blockquote>
+<p>✅ <strong>知识</strong> 是我们头脑中包含的内容，代表我们对世界的理解。它是通过一个主动的 <strong>学习</strong> 过程获得的，这个过程将我们接收到的信息片段整合到我们世界的活动模型中。</p>
+</blockquote>
+<p>我们通常不会严格定义知识，而是通过 <a href="https://en.wikipedia.org/wiki/DIKW_pyramid">DIKW 金字塔</a> 将其与其他相关概念对齐。它包含以下概念：</p>
+<ul>
+<li><strong>数据</strong> 是以物理介质表示的内容，例如书面文字或口头话语。数据独立于人类存在，并且可以在人们之间传递。</li>
+<li><strong>信息</strong> 是我们在头脑中解读数据的方式。例如，当我们听到 "计算机" 这个词时，我们对其有一定的理解。</li>
+<li><strong>知识</strong> 是信息整合到我们的世界模型中的过程。例如，一旦我们学习到什么是计算机，我们就开始对其工作原理、成本及用途有一些概念。这些相互关联的概念网络形成了我们的知识。</li>
+<li><strong>智慧</strong> 是我们对世界理解的更高一层次，代表了 <em>元知识</em>，即关于如何及何时使用知识的一些概念。</li>
+</ul>
+<p><img src="images/DIKW_Pyramid.png" width="30%"/></p>
+<ul>
+<li>图片来源：<a href="https://commons.wikimedia.org/w/index.php?curid=37705247">维基百科</a>，作者 Longlivetheux - 自作，CC BY-SA 4.0 *</li>
+</ul>
+<p>因此，<strong>知识表示</strong> 的问题就是要找到一种有效的方法，将知识以数据的形式表示在计算机内部，使之能够自动化使用。这可以看作一个光谱：</p>
+<p><img alt="知识表示光谱" src="../images/knowledge-spectrum.png" /></p>
+<blockquote>
+<p>图片来源：<a href="http://soshnikov.com">Dmitry Soshnikov</a></p>
+</blockquote>
+<ul>
+<li>在左边，有非常简单的知识表示类型，计算机可以有效使用。最简单的是算法型，当知识用计算机程序表示时。然而，这不是表示知识的最佳方式，因为它不灵活。我们头脑中的知识通常是非算法性的。</li>
+<li>在右边，有自然文本等表示方式。它是最强大的，但不能用于自动推理。</li>
+</ul>
+<blockquote>
+<p>✅ 花一分钟时间思考你如何在头脑中表示知识并将其转化为笔记。是否有一种特定的格式能够促进记忆？</p>
+</blockquote>
+<h2 id="_4">计算机知识表示的分类</h2>
+<p>我们可以将不同的计算机知识表示方法分为以下几类：</p>
+<ul>
+<li>
+<p><strong>网络表示</strong> 基于我们头脑中有一个互相关联的概念网络这一事实。我们可以尝试在计算机内重现相同的图网络——一个所谓的 <strong>语义网络</strong>。</p>
+</li>
+<li>
+<p><strong>对象-属性-值三元组</strong> 或 <strong>属性-值对</strong>。因为图可以在计算机内表示为节点和边的列表，我们可以通过一个三元组列表来表示语义网络，包含对象、属性和值。例如，我们可以构建以下关于编程语言的三元组：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>属性</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td>是</td>
+<td>非类型化语言</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>发明者是</td>
+<td>Guido van Rossum</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>代码块语法</td>
+<td>缩进</td>
+</tr>
+<tr>
+<td>非类型化语言</td>
+<td>没有</td>
+<td>类型定义</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✅ 想一想三元组如何用于表示其他类型的知识。</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>层次表示</strong> 强调我们在头脑中经常创建对象的层次结构。例如，我们知道金丝雀是一种鸟类，而所有鸟类都有翅膀。我们还对金丝雀的颜色及其飞行速度有一定的了解。</p>
+</li>
+<li>
+<p><strong>框架表示</strong> 基于将每个对象或对象类表示为一个 <strong>框架</strong>，其中包含 <strong>槽</strong>。槽可能有默认值、值限制或可以调用的存储过程以获得槽的值。所有框架形成一个类似于面向对象编程语言中对象层次结构的层次。</p>
+</li>
+<li><strong>情景</strong> 是一种特殊的框架，代表可以随时间展开的复杂情境。</li>
+</ol>
+<p><strong>Python</strong></p>
+<table>
+<thead>
+<tr>
+<th>槽</th>
+<th>值</th>
+<th>默认值</th>
+<th>区间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>名称</td>
+<td>Python</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>是</td>
+<td>非类型化语言</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>变量命名方式</td>
+<td></td>
+<td>CamelCase</td>
+<td></td>
+</tr>
+<tr>
+<td>程序长度</td>
+<td></td>
+<td></td>
+<td>5-5000 行</td>
+</tr>
+<tr>
+<td>代码块语法</td>
+<td>缩进</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>程序表示</strong> 基于表示一系列当某种情况发生时可以执行的动作。</li>
+<li>生成规则是 if-then 语句，允许我们推断结论。例如，一位医生可能有一个规则说 <strong>如果</strong> 病人发烧 <strong>或</strong> 血液测试中 C 反应蛋白水平高 <strong>则</strong> 病人有炎症。一旦我们遇到其中一个条件，我们可以得出关于炎症的结论，然后在进一步推理中使用它。</li>
+<li>
+<p>算法可以被认为是另一种形式的程序表示，尽管在知识库系统中几乎从未直接使用。</p>
+</li>
+<li>
+<p><strong>逻辑</strong> 最初由亚里士多德提出，用于表示普遍的人类知识。</p>
+</li>
+<li>谓词逻辑作为一种数学理论，过于丰富而不可计算，因此通常使用它的某个子集，如在 Prolog 中使用的 Horn 子句。</li>
+<li>描述逻辑是一系列逻辑系统，用于表示和推理关于分布知识表示的对象层次结构，如 <em>语义网</em>。</li>
+</ol>
+<h2 id="_5">专家系统</h2>
+<p>符号 AI 的早期成功之一是所谓的 <strong>专家系统</strong>——设计为在某一有限问题域中充当专家的计算机系统。它们基于从一个或多个人工专家中提取的 <strong>知识库</strong>，并且包含一个执行推理的 <strong>推理引擎</strong>。</p>
+<table>
+<thead>
+<tr>
+<th><img alt="人类结构" src="../images/arch-human.png" /></th>
+<th><img alt="基于知识的系统" src="../images/arch-kbs.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简化的人类神经系统结构</td>
+<td>基于知识系统的架构</td>
+</tr>
+</tbody>
+</table>
+<p>专家系统的构建类似于人类推理系统，其中包含 <strong>短期记忆</strong> 和 <strong>长期记忆</strong>。同样，在基于知识的系统中我们区分以下组件：</p>
+<ul>
+<li><strong>问题记忆</strong>：包含当前解决的问题的知识，即病人的体温或血压，是否有炎症等。这些知识也称为 <strong>静态知识</strong>，因为它包含我们当前对问题的了解的快照——所谓的 <em>问题状态</em>。</li>
+<li><strong>知识库</strong>：代表关于问题域的长期知识。它从人工专家那里手动提取，并且在咨询之间不会改变。因为它允许我们从一个问题状态导航到另一个问题状态，它也称为 <strong>动态知识</strong>。</li>
+<li><strong>推理引擎</strong>：协调整个问题状态空间中的搜索过程，在需要时向用户提问。它还负责为每个状态找到要应用的正确规则。</li>
+</ul>
+<p>例如，让我们考虑以下基于动物外部特征确定动物的专家系统：</p>
+<p><img alt="AND-OR 树" src="../images/AND-OR-Tree.png" /></p>
+<blockquote>
+<p>图片来源：<a href="http://soshnikov.com">Dmitry Soshnikov</a></p>
+</blockquote>
+<p>此图称为 <strong>AND-OR 树</strong>，它是生产规则集的图形表示。绘制树在从专家提取知识的开始时很有用。为了在计算机内部表示知识，使用规则更加方便：</p>
+<pre><code>如果动物吃肉
+或 (动物有尖牙
+    且动物有爪子
+    且动物有向前看的眼睛
+) 
+则动物是食肉动物
+</code></pre>
+<p>你可以注意到，每个规则左侧的条件和动作本质上都是对象-属性-值（OAV）三元组。<strong>工作记忆</strong> 包含与当前正在解决的问题相对应的 OAV 三元组集。<strong>规则引擎</strong> 搜索满足条件的规则并应用它们，将另一个三元组添加到工作记忆中。</p>
+<blockquote>
+<p>✅ 在你喜欢的主题上编写你自己的 AND-OR 树！</p>
+</blockquote>
+<h3 id="_6">前向推理与后向推理</h3>
+<p>上述过程称为 <strong>前向推理</strong>。它从工作记忆中可用的一些初始数据开始，然后执行以下推理循环：</p>
+<ol>
+<li>如果目标属性存在于工作记忆中，则停止并给出结果</li>
+<li>查找条件当前满足的所有规则——获得 <strong>冲突集</strong> 规则。</li>
+<li>执行 <strong>冲突解决</strong>——选择一个要在此步骤执行的规则。可能有不同的冲突解决策略：</li>
+<li>选择知识库中第一个适用的规则</li>
+<li>随机选择一个规则</li>
+<li>选择 <em>更具体</em> 的规则，即满足 "左侧"（LHS）中最多条件的规则</li>
+<li>应用选择的规则并将新知识插入问题状态</li>
+<li>从步骤1重新开始。</li>
+</ol>
+<p>然而，在某些情况下，我们可能希望从一个关于问题的空白知识开始，并提出有助于我们得出结论的问题。例如，在进行医学诊断时，我们通常不会在开始诊断病人之前进行所有医学分析。我们希望在需要做出决策时进行分析。</p>
+<p>此过程可以用 <strong>后向推理</strong> 建模。它由 <strong>目标</strong> 驱动——我们正在寻找的属性值：</p>
+<ol>
+<li>选择所有可以给我们目标值的规则（即在 RHS（"右侧"）中有目标）——冲突集</li>
+<li>如果没有该属性的规则，或者有规则表示我们应该问用户该值——询问它，否则：</li>
+<li>使用冲突解决策略选择一个我们将用作<em>假设</em>的规则——我们将尝试证明它</li>
+<li>递归地对规则 LHS 中的所有属性重复此过程，尝试证明它们为目标</li>
+<li>如果在任何时候进程失败——在步骤3中使用另一个规则。</li>
+</ol>
+<blockquote>
+<p>✅ 哪些情况下前向推理更合适？后向推理呢？</p>
+</blockquote>
+<h3 id="_7">实现专家系统</h3>
+<p>专家系统可以使用不同的工具实现：</p>
+<ul>
+<li>直接在某些高级编程语言中编写它们。这不是最好的方法，因为基于知识的系统的主要优点是知识与推理分离，并且潜在问题域专家应能够编写规则而无需理解推理过程的详细信息。</li>
+<li>使用 <strong>专家系统外壳</strong>，即专门设计为通过某种知识表示语言填充知识的系统。</li>
+</ul>
+<h2 id="_8">✍️ 练习：动物推理</h2>
+<p>参见 <a href="https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/Animals.ipynb">Animals.ipynb</a> 获取如何实现前向和后向推理专家系统的示例。</p>
+<blockquote>
+<p><strong>注意</strong>：这个示例相对简单，仅提供专家系统的外观概念。一旦你开始创建这样的系统，你将会注意到，只有当你达到一定数量的规则（大约200+）时，你才会看到一些 <em>智能</em> 行为。到某一时刻，规则变得过于复杂，无法全部记住，此时你可能会想知道为什么系统做出某些决策。然而，基于知识的系统的重要特征是你始终可以 <em>解释</em> 任何决策是如何做出的。</p>
+</blockquote>
+<h2 id="_9">本体论与语义网</h2>
+<p>在二十世纪末，有一个使用知识表示来注释互联网资源的倡议，以便能够找到对应非常具体查询的资源。这一运动称为 <strong>语义网</strong>，它依赖于几个概念：</p>
+<ul>
+<li>基于 <strong><a href="https://en.wikipedia.org/wiki/Description_logic">描述逻辑</a></strong> (DL) 的特殊知识表示。它类似于框架知识表示，因为它构建了对象的层次结构和属性，但具有形式逻辑语义和推理。有一整套平衡表达能力和推理算法复杂性的 DL 家族。</li>
+<li>分布式知识表示，其中所有概念都由全局 URI 标识符表示，使其能够创建跨越互联网的知识层次。</li>
+<li>一族基于 XML 的知识描述语言：RDF（资源描述框架）、RDFS（RDF 架构）、OWL（本体网语言）。</li>
+</ul>
+<p>语义网的核心概念是 <strong>本体</strong> 的概念。它指的是使用某种形式知识表示明确指定的问题域。最简单的本体可以只是问题域中的对象层次结构，但更复杂的本体将包括可用于推理的规则。</p>
+<p>在语义网中，所有表示基于三元组。每个对象和每个关系都由 URI 唯一标识。例如，如果我们想要声明 AI 课程由 Dmitry Soshnikov 于 2022 年 1 月 1 日开发的事实，这里是可以使用的三元组：</p>
+<p><img src="images/triplet.png" width="30%"/></p>
+<pre><code>http://github.com/microsoft/ai-for-beginners http://www.example.com/terms/creation-date &quot;2022-01-01&quot;
+http://github.com/microsoft/ai-for-beginners http://purl.org/dc/elements/1.1/creator http://soshnikov.com
+</code></pre>
+<blockquote>
+<p>✅ 这里 <code>http://www.example.com/terms/creation-date</code> 和 <code>http://purl.org/dc/elements/1.1/creator</code> 是一些公认可表达 <em>创造者</em> 和 <em>创建日期</em> 概念的 URI。</p>
+</blockquote>
+<p>在更复杂的情况下，如果我们想要定义一个创造者列表，我们可以使用 RDF 中定义的一些数据结构。</p>
+<p><img src="images/triplet-complex.png" width="40%"/></p>
+<blockquote>
+<p>上图来源：<a href="http://soshnikov.com">Dmitry Soshnikov</a></p>
+</blockquote>
+<p>语义网的进展因搜索引擎和自然语言处理技术的成功而有所放缓，这些技术允许从文本中提取结构化数据。然而，在某些领域仍有显著的努力来维护本体论和知识库。一些值得注意的项目：</p>
+<ul>
+<li><a href="https://wikidata.org/">WikiData</a> 是与维基百科关联的机器可读知识库的集合。大多数数据从维基百科 <em>信息框</em> 中挖掘出来，这些信息框是维基百科页面中的结构化内容。你可以用 SPARQL（语义网的特殊查询语言）<a href="https://query.wikidata.org/">查询</a> Wikidata。这是一个显示人类中最流行的眼睛颜色的示例查询：</li>
+</ul>
+<pre><code class="language-sparql">#defaultView:BubbleChart
+SELECT ?eyeColorLabel (COUNT(?human) AS ?count)
+WHERE
+{
+  ?human wdt:P31 wd:Q5.       # human instance-of homo sapiens
+  ?human wdt:P1340 ?eyeColor. # human eye-color ?eyeColor
+  SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. }
+}
+GROUP BY ?eyeColorLabel
+</code></pre>
+<ul>
+<li><a href="https://www.dbpedia.org/">DBpedia</a> 是另一个类似 WikiData 的努力。</li>
+</ul>
+<blockquote>
+<p>✅ 如果你想体验构建自己的本体论或打开现有的本体论，有一个很棒的视觉本体编辑器叫做 <a href="https://protege.stanford.edu/">Protégé</a>。下载它，或者在线使用。</p>
+</blockquote>
+<p><img src="images/protege.png" width="70%"/></p>
+<p><em>Web Protégé 编辑器打开了罗曼诺夫家庭的本体。截图由 Dmitry Soshnikov 提供</em></p>
+<h2 id="_10">✍️ 练习：一个家庭本体论</h2>
+<p>参见 <a href="https://github.com/Ezana135/AI-For-Beginners/blob/main/lessons/2-Symbolic/FamilyOntology.ipynb">FamilyOntology.ipynb</a> 获取一个使用语义网技术来推理家族关系的示例。我们将使用通用 GEDCOM 格式表示的家谱和家庭关系本体，为给定的一组个人构建所有家庭关系的图。</p>
+<h2 id="microsoft-concept-graph">Microsoft Concept Graph</h2>
+<p>在大多数情况下，本体论是由人工细心创建的。然而，也有可能从非结构化数据中 <strong>挖掘</strong> 本体论，例如，从自然语言文本中。</p>
+<p>微软研究院做了一次这样的尝试，并得出了 <a href="https://blogs.microsoft.com/ai/microsoft-researchers-release-graph-that-helps-machines-conceptualize/?WT.mc_id=academic-77998-cacaste">Microsoft Concept Graph</a>。</p>
+<p>它是一个使用 <code>is-a</code> 继承关系将实体分组在一起的大型集合。它允许回答诸如 "什么是微软公司？" 这样的问题——答案类似于 "一个公司，概率为 0.87，一个品牌，概率为 0.75"。</p>
+<p>该图可以作为 REST API 使用，或者作为一个包含所有实体对的大型可下载文本文件。</p>
+<h2 id="_11">✍️ 练习：概念图</h2>
+<p>尝试 <a href="https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/MSConceptGraph.ipynb">MSConceptGraph.ipynb</a> 笔记本，了解如何使用 Microsoft Concept Graph 将新闻文章分组到多个类别中。</p>
+<h2 id="_12">结论</h2>
+<p>如今，AI 经常被认为是 <em>机器学习</em> 或 <em>神经网络</em> 的同义词。然而，人类还展现出明确的推理能力，而这是当前神经网络尚未处理的内容。在实际项目中，明确推理仍然被用来完成需要解释或能够以可控方式修改系统行为的任务。</p>
+<h2 id="_13">🚀 挑战</h2>
+<p>在与本课相关的“家族本体”笔记本中，可以尝试探索其他家庭关系。试着发现家谱中人与人之间的新连接。</p>
+<h2 id="_14"><a href="https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/202">课后测验</a></h2>
+<h2 id="_15">复习与自学</h2>
+<p>通过互联网进行研究，发现人类尝试量化和编码知识的领域。了解布鲁姆分类法（Bloom's Taxonomy），并回顾历史，了解人类如何尝试理解他们的世界。探索林奈（Linnaeus）对生物进行分类的工作，并观察德米特里·门捷列夫（Dmitri Mendeleev）如何为化学元素创建描述和分组的方法。你还能找到哪些有趣的例子？</p>
+<p><strong>作业</strong>: <a href="../assignment_chs/">构建本体</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
