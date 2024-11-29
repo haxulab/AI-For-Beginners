@@ -56,7 +56,7 @@
 
 请注意，这些表达式最左边的部分是相同的，因此我们可以有效地从损失函数开始计算导数，并通过计算图 "向后" 计算。因此，多层感知器的训练方法称为**反向传播**，或 'backprop'。
 
-<img alt="计算图" src="images/ComputeGraphGrad.png"/>
+![计算图](images/ComputeGraphGrad.png)
 
 > TODO: 图片引用
 

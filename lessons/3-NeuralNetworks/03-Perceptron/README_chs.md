@@ -4,9 +4,8 @@
 
 1957年，康奈尔航空实验室的Frank Rosenblatt首次尝试实现类似于现代神经网络的东西。这是一种名为"Mark-1"的硬件实现，旨在识别原始几何图形，如三角形、正方形和圆形。
 
-|      |      |
-|--------------|-----------|
-|<img src='images/Rosenblatt-wikipedia.jpg' alt='Frank Rosenblatt'/> | <img src='images/Mark_I_perceptron_wikipedia.jpg' alt='The Mark 1 Perceptron' />|
+| ![Frank Rosenblatt](images/Rosenblatt-wikipedia.jpg) | ![The Mark 1 Perceptron](images/Mark_I_perceptron_wikipedia.jpg) |
+|------------------------------------------------------|---------------------------------------------------------------|
 
 > 图片来源 [维基百科](https://en.wikipedia.org/wiki/Perceptron)
 
@@ -25,7 +24,7 @@ y(x) = f(w<sup>T</sup>x)
 其中f是一个阶跃激活函数
 
 <!-- img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%20%3D%20%5Cbegin%7Bcases%7D%0A%20%20%20%20%20%20%20%20%20%2B1%20%26%20x%20%5Cgeq%200%20%5C%5C%0A%20%20%20%20%20%20%20%20%20-1%20%26%20x%20%3C%200%0A%20%20%20%20%20%20%20%5Cend%7Bcases%7D%20%5C%5C%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f(x) = \begin{cases} +1 & x \geq 0 \\ -1 & x < 0 \end{cases} \\" width="154" height="50" / -->
-<img src="images/activation-func.png"/>
+![Activation Function](images/activation-func.png)
 
 ## 训练感知器
 

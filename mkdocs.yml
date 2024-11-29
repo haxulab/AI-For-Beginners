@@ -1,0 +1,40 @@
+site_name: AI for Beginner
+docs_dir: .
+nav:
+  - 人工智能初学者课程: README_chs.md
+  - 课程:
+    - 课程设置:
+      - 给教育者: lessons/0-course-setup/for-teachers_chs.md
+    - 人工智能简介: 
+      - lessons/1-Intro/README_chs.md
+      - lessons/1-Intro/assignment_chs.md
+    - 知识表示与专家系统: 
+      - lessons/2-Symbolic/README_chs.md
+      - lessons/2-Symbolic/assignment_chs.md
+    - 神经网络: 
+      - lessons/3-NeuralNetworks/README_chs.md
+      - lessons/3-NeuralNetworks/03-Perceptron/README_chs.md
+      - lessons/3-NeuralNetworks/04-OwnFramework/README_chs.md
+      - lessons/3-NeuralNetworks/05-Frameworks/README_chs.md
+    - 计算机视觉: 
+      - lessons/4-ComputerVision/06-IntroCV/README_chs.md
+      - lessons/4-ComputerVision/07-ImageClassification/README_chs.md
+      - lessons/4-ComputerVision/08-ObjectDetection/README_chs.md
+      - lessons/4-ComputerVision/09-ModelDeployment/README_chs.md
+    - 自然语言处理: 
+      - lessons/5-NLP/10-IntroNLP/README_chs.md
+      - lessons/5-NLP/11-TextClassification/README_chs.md
+      - lessons/5-NLP/12-TextGeneration/README_chs.md
+      - lessons/5-NLP/13-Translation/README_chs.md
+    - 其他技术: 
+      - lessons/6-Other/14-ReinforcementLearning/README_chs.md
+      - lessons/6-Other/15-GenerativeModels/README_chs.md
+    - AI伦理: 
+      - lessons/7-Ethics/16-AIEthics/README_chs.md
+    - 额外内容: 
+      - lessons/X-Extras/17-AdditionalResources/README_chs.md
+plugins:
+  - search
+  - same-dir
+  - awesome-pages
+theme: readthedocs

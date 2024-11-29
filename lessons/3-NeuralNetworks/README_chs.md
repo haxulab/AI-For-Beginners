@@ -33,8 +33,7 @@
 
 因此，神经元的最简单数学模型包含多个输入X<sub>1</sub>, ..., X<sub>N</sub> 和一个输出Y，以及一系列权重W<sub>1</sub>, ..., W<sub>N</sub>。输出的计算如下：
 
-<img src="images/netout.png" alt="Y = f\left(\sum_{i=1}^N X_iW_i\right)" width="131" height="53" align="center"/>
-
+![激活函数](images/netout.png)
 其中f是某种非线性**激活函数**。
 
 > 早期的神经元模型在1943年由Warren McCullock和Walter Pitts的经典论文 [《神经活动中的逻辑演算》](https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf) 中进行了描述。Donald Hebb在他的书 "[行为的组织：神经心理学理论](https://books.google.com/books?id=VNetYrB8EBoC)" 中提出了这些网络的训练方法。
