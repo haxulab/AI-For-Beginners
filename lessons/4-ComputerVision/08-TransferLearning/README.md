@@ -12,7 +12,7 @@ This approach is called **transfer learning**, because we transfer some knowledg
 
 The convolutional networks that we have talked about in the previous section contained a number of layers, each of which is supposed to extract some features from the image, starting from low-level pixel combinations (such as horizontal/vertical line or stroke), up to higher level combinations of features, corresponding to things like an eye of a flame. If we train CNN on sufficiently large dataset of generic and diverse images, the network should learn to extract those common features.
 
-Both Keras and PyTorch contain functions to easily load pre-trained neural network weights for some common architectures, most of which were trained on ImageNet images. The most often used ones are described on the [CNN Architectures](../07-ConvNets/CNN_Architectures.md) page from the prior lesson. In particular, you may want to consider using one of the following:
+Both Keras and PyTorch contain functions to easily load pre-trained neural network weights for some common architectures, most of which were trained on ImageNet images. The most often used ones are described on the [CNN Architectures](../07-ConvNets/CNN_Architectures_chs.md) page from the prior lesson. In particular, you may want to consider using one of the following:
 
 * **VGG-16/VGG-19** which are relatively simple models that still give good accuracy. Often using VGG as a first attempt is a good choice to see how transfer learning is working.
 * **ResNet** is a family of models proposed by Microsoft Research in 2015. They have more layers, and thus take more resources.
@@ -70,8 +70,8 @@ In the accompanying notebooks, there are notes at the bottom about how transfer 
 
 ## Review & Self Study
 
-Read through [TrainingTricks.md](TrainingTricks.md) to deepen your knowledge of some other way to train your models.
+Read through [TrainingTricks_chs.md](TrainingTricks_chs.md) to deepen your knowledge of some other way to train your models.
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, we will use real-life [Oxford-IIIT](https://www.robots.ox.ac.uk/~vgg/data/pets/) pets dataset with 35 breeds of cats and dogs, and we will build a transfer learning classifier.

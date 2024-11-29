@@ -56,6 +56,6 @@ In the accompanying notebooks, there are notes at the bottom about how to obtain
 
 While CNNs are most often used for Computer Vision tasks, they are generally good for extracting fixed-sized patterns. For example, if we are dealing with sounds, we may also want to use CNNs to look for some specific patterns in audio signal - in which case filters would be 1-dimensional (and this CNN would be called 1D-CNN). Also, sometimes 3D-CNN is used to extract features in multi-dimensional space, such as certain events occurring on video - CNN can capture certain patterns of feature changing over time. Do some review and self-study about other tasks that can be done with CNNs.
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, you are tasked with classifying different cat and dog breeds. These images are more complex than the MNIST dataset and of higher dimensions, and there are more than 10 classes.

@@ -7,9 +7,9 @@
 * [学生中心页面](https://docs.microsoft.com/learn/student-hub?WT.mc_id=academic-77998-cacaste) 在这个页面，你会找到入门资源、学生包，甚至是获得免费认证凭证的方法。这个页面值得你收藏，并时不时查看，因为我们至少每月会更换内容。
 * [微软学生学习大使](https://studentambassadors.microsoft.com?WT.mc_id=academic-77998-cacaste) 加入一个全球学生大使社区，这可能是你进入微软的途径。
 
-**学生们**，有几种方式可以使用这个课程内容。首先，你可以直接在 GitHub 上阅读文本并查看代码。如果你想在任何笔记本中运行代码 - [阅读我们的说明](./etc/how-to-run.md)，并在这篇[博客文章](https://soshnikov.com/education/how-to-execute-notebooks-from-github/)中找到更多建议。
+**学生们**，有几种方式可以使用这个课程内容。首先，你可以直接在 GitHub 上阅读文本并查看代码。如果你想在任何笔记本中运行代码 - [阅读我们的说明](./etc/how-to-run_chs.md)，并在这篇[博客文章](https://soshnikov.com/education/how-to-execute-notebooks-from-github/)中找到更多建议。
 
-> **注意**：[在这个课程中运行代码的说明](/how-to-run.md)
+> **注意**：[在这个课程中运行代码的说明](/how-to-run_chs.md)
 
 ## 自学
 
@@ -25,7 +25,7 @@
 
 > 进一步学习，我们推荐跟随这些 [Microsoft Learn](https://docs.microsoft.com/en-us/users/dmitrysoshnikov-9132/collections/31zgizg2p418yo/?WT.mc_id=academic-77998-cacaste) 模块和学习路径。
 
-**教师们**，我们已经[包含了一些建议](/for-teachers.md)关于如何使用这个课程。
+**教师们**，我们已经[包含了一些建议](/for-teachers_chs.md)关于如何使用这个课程。
 
 ---
 

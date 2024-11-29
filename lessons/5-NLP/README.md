@@ -58,9 +58,9 @@ If you're interested in learning about NLP from a classic ML perspective, visit 
 ## In this Section
 In this section we will learn about:
 
-* [Representing text as tensors](13-TextRep/README.md)
-* [Word Embeddings](14-Emdeddings/README.md)
-* [Language Modeling](15-LanguageModeling/README.md)
-* [Recurrent Neural Networks](16-RNN/README.md)
-* [Generative Networks](17-GenerativeNetworks/README.md)
-* [Transformers](18-Transformers/README.md)
+* [Representing text as tensors](13-TextRep/README_chs.md)
+* [Word Embeddings](14-Emdeddings/README_chs.md)
+* [Language Modeling](15-LanguageModeling/README_chs.md)
+* [Recurrent Neural Networks](16-RNN/README_chs.md)
+* [Generative Networks](17-GenerativeNetworks/README_chs.md)
+* [Transformers](18-Transformers/README_chs.md)

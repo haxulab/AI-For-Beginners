@@ -173,4 +173,4 @@ Read through these articles and notebooks about YOLO and try them for yourself
 * [A Step-by-Step Introduction to the Basic Object Detection Algorithms](https://www.analyticsvidhya.com/blog/2018/10/a-step-by-step-introduction-to-the-basic-object-detection-algorithms-part-1/)
 * [Implementation of Faster R-CNN in Python for Object Detection](https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/)
 
-## [Assignment: Object Detection](lab/README.md)
+## [Assignment: Object Detection](lab/README_chs.md)

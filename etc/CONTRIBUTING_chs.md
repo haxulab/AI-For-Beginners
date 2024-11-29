@@ -14,6 +14,6 @@
 
 - [ ] 编写关于深度强化学习的部分
 - [ ] 改进关于目标检测的部分和笔记本
-- [ ] PyTorch Lightning（用于[这一部分](https://github.com/microsoft/AI-For-Beginners/blob/main/3-NeuralNetworks/05-Frameworks/README.md)）
+- [ ] PyTorch Lightning（用于[这一部分](https://github.com/microsoft/AI-For-Beginners/blob/main/3-NeuralNetworks/05-Frameworks/README_chs.md)）
 - [ ] 编写部分和示例关于命名实体识别
 - [ ] 为[这一部分](https://github.com/microsoft/AI-For-Beginners/tree/main/5-NLP/15-LanguageModeling) 创建自己的嵌入的训练示例

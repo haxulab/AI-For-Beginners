@@ -238,4 +238,4 @@ In the Family Ontology notebook associated to this lesson, there is an opportuni
 
 Do some research on the internet to discover areas where humans have tried to quantify and codify knowledge. Take a look at Bloom's Taxonomy, and go back in history to learn how humans tried to make sense of their world. Explore the work of Linnaeus to create a taxonomy of organisms, and observe the way Dmitri Mendeleev created a way for chemical elements to be described and grouped. What other interesting examples can you find?
 
-**Assignment**: [Build an Ontology](assignment.md)
+**Assignment**: [Build an Ontology](assignment_chs.md)

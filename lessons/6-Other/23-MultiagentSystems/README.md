@@ -149,4 +149,4 @@ Take this lesson to the real world and try to conceptualize a multi-agent system
 
 Review the use of this type of system in industry. Pick a domain such as manufacturing or the video game industry and discover how multi-agent systems can be used to solve unique problems.
 
-## [NetLogo Assignment](assignment.md)
+## [NetLogo Assignment](assignment_chs.md)

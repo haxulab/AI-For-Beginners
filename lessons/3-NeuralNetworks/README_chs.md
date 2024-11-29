@@ -41,7 +41,7 @@
 ## 本章节内容
 
 在本章节中我们将学习：
-* [感知器](03-Perceptron/README.md)，一种最早的两类分类神经网络模型
-* [多层网络](04-OwnFramework/README.md) 和配套笔记本 [如何构建我们自己的框架](04-OwnFramework/OwnFramework.ipynb)
-* [神经网络框架](05-Frameworks/README.md)，包括以下笔记本：[PyTorch](05-Frameworks/IntroPyTorch.ipynb) 和 [Keras/Tensorflow](05-Frameworks/IntroKerasTF.ipynb)
+* [感知器](03-Perceptron/README_chs.md)，一种最早的两类分类神经网络模型
+* [多层网络](04-OwnFramework/README_chs.md) 和配套笔记本 [如何构建我们自己的框架](04-OwnFramework/OwnFramework.ipynb)
+* [神经网络框架](05-Frameworks/README_chs.md)，包括以下笔记本：[PyTorch](05-Frameworks/IntroPyTorch.ipynb) 和 [Keras/Tensorflow](05-Frameworks/IntroKerasTF.ipynb)
 * [过拟合](05-Frameworks#overfitting)

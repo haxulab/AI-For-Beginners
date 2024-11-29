@@ -149,4 +149,4 @@ NetLogo的世界由以下对象组成：
 
 复习这种系统在工业中的使用。在制造业或视频游戏产业等领域中，了解多智能体系统可以如何用来解决独特问题。
 
-## [NetLogo作业](assignment.md)
+## [NetLogo作业](assignment_chs.md)

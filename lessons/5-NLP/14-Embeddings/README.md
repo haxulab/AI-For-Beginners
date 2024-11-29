@@ -62,4 +62,4 @@ Word2Vec has been used for some interesting applications, including generating s
 
 Read through this paper on Word2Vec: [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/pdf/1301.3781.pdf)
 
-## [Assignment: Notebooks](assignment.md)
+## [Assignment: Notebooks](assignment_chs.md)

@@ -78,9 +78,9 @@
 
 反向传播是 AI 和 ML 中常用的算法，值得[更详细地研究](https://wikipedia.org/wiki/Backpropagation)
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
 在本次实验中，你需要使用本节课中构建的框架来解决 MNIST 手写数字分类问题。
 
-* [说明](lab/README.md)
+* [说明](lab/README_chs.md)
 * [笔记本](lab/MyFW_MNIST.ipynb)

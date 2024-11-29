@@ -54,4 +54,4 @@ CNN的工作方式基于以下几个重要思想：
 
 ## 最著名的CNN架构
 
-[继续学习最著名的CNN架构](CNN_Architectures.md)
+[继续学习最著名的CNN架构](CNN_Architectures_chs.md)

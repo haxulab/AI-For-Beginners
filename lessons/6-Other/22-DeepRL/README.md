@@ -70,7 +70,7 @@ An improved version of the Policy Gradients approach is called **Actor-Critic**.
 * The policy, which determines which action to take. This part is called **actor**
 * The estimation of the total reward we can expect to get at this state - this part is called **critic**.
 
-In a sense, this architecture resembles a [GAN](../../4-ComputerVision/10-GANs/README.md), where we have two networks that are trained against each other. In the actor-critic model, the actor proposes the action we need to take, and the critic tries to be critical and estimate the result. However, our goal is to train those networks in unison.
+In a sense, this architecture resembles a [GAN](../../4-ComputerVision/10-GANs/README_chs.md), where we have two networks that are trained against each other. In the actor-critic model, the actor proposes the action we need to take, and the critic tries to be critical and estimate the result. However, our goal is to train those networks in unison.
 
 Because we know both the real cumulative rewards and the results returned by the critic during the experiment, it is relatively easy to build a loss function that will minimize the difference between them. That would give us **critic loss**. We can compute **actor loss** by using the same approach as in the policy gradient algorithm.
 
@@ -105,10 +105,10 @@ Explore the applications listed in the 'Other RL Tasks' section and try to imple
 
 ## Review & Self Study
 
-Learn more about classical reinforcement learning in our [Machine Learning for Beginners Curriculum](https://github.com/microsoft/ML-For-Beginners/blob/main/8-Reinforcement/README.md).
+Learn more about classical reinforcement learning in our [Machine Learning for Beginners Curriculum](https://github.com/microsoft/ML-For-Beginners/blob/main/8-Reinforcement/README_chs.md).
 
 Watch [this great video](https://www.youtube.com/watch?v=qv6UVOQ0F44) talking about how a computer can learn to play Super Mario.
 
-## Assignment: [Train a Mountain Car](lab/README.md)
+## Assignment: [Train a Mountain Car](lab/README_chs.md)
 
 Your goal during this assignment would be to train a different Gym environment - [Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/).

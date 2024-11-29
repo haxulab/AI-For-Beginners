@@ -61,7 +61,7 @@ Genetic Algorithms are used to solve many problems, including logistics and sear
 
 ## Review & Self Study
 
-Watch [this great video](https://www.youtube.com/watch?v=qv6UVOQ0F44) talking about how computer can learn to play Super Mario using neural networks trained by genetic algorithms. We will learn more about computer learning to play games like that [in the next section](../22-DeepRL/README.md).
+Watch [this great video](https://www.youtube.com/watch?v=qv6UVOQ0F44) talking about how computer can learn to play Super Mario using neural networks trained by genetic algorithms. We will learn more about computer learning to play games like that [in the next section](../22-DeepRL/README_chs.md).
 
 ## [Assignment: Diophantine Equation](Diophantine.ipynb)
 

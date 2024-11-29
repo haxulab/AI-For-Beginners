@@ -61,6 +61,6 @@ Body segmentation is just one of the common tasks that we can do with images of 
 
 This [wikipedia article](https://wikipedia.org/wiki/Image_segmentation) offers a good overview of the various applications of this technique. Learn more on your own about the subdomains of Instance segmentation and Panoptic segmentation in this field of inquiry.
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, try **human body segmentation** using [Segmentation Full Body MADS Dataset](https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset) from Kaggle.

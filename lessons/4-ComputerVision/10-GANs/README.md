@@ -18,7 +18,7 @@ The main idea of a GAN is to have two neural networks that will be trained again
 
 ### Discriminator
 
-The architecture of discriminator does not differ from an ordinary image classification network. In the simplest case it can be fully-connected classifier, but most probably it will be a [convolutional network](../07-ConvNets/README.md).
+The architecture of discriminator does not differ from an ordinary image classification network. In the simplest case it can be fully-connected classifier, but most probably it will be a [convolutional network](../07-ConvNets/README_chs.md).
 
 > ✅ A GAN based on convolutional networks is called a [DCGAN](https://arxiv.org/pdf/1511.06434.pdf)
 
@@ -28,7 +28,7 @@ A CNN discriminator consists of the following layers: several convolutions+pooli
 
 ### Generator
 
-A Generator is slightly more tricky. You can consider it to be a reversed discriminator. Starting from a latent vector (in place of a feature vector), it has a fully-connected layer to convert it into the required size/shape, followed by deconvolutions+upscaling. This is similar to *decoder* part of [autoencoder](../09-Autoencoders/README.md).
+A Generator is slightly more tricky. You can consider it to be a reversed discriminator. Starting from a latent vector (in place of a feature vector), it has a fully-connected layer to convert it into the required size/shape, followed by deconvolutions+upscaling. This is similar to *decoder* part of [autoencoder](../09-Autoencoders/README_chs.md).
 
 > ✅ Because the convolution layer is implemented as a linear filter traversing the image, deconvolution is essentially similar to convolution, and can be implemented using the same layer logic.
 

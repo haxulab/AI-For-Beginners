@@ -78,7 +78,7 @@ If you can see that overfitting occurs, you can do one of the following:
 
  * Increase the amount of training data
  * Decrease the complexity of the model
- * Use some [regularization technique](../../4-ComputerVision/08-TransferLearning/TrainingTricks.md), such as [Dropout](../../4-ComputerVision/08-TransferLearning/TrainingTricks.md#Dropout), which we will consider later.
+ * Use some [regularization technique](../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md), such as [Dropout](../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md#Dropout), which we will consider later.
 
 ## Overfitting and Bias-Variance Tradeoff
 
@@ -112,10 +112,10 @@ Ask yourself the following questions:
 - What is the difference between TensorFlow and PyTorch?
 - What is the difference between overfitting and underfitting?
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, you are asked to solve two classification problems using single- and multi-layered fully-connected networks using PyTorch or TensorFlow.
 
-* [Instructions](lab/README.md)
+* [Instructions](lab/README_chs.md)
 * [Notebook](lab/LabFrameworks.ipynb)
 

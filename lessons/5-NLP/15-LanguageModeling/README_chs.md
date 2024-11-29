@@ -37,6 +37,6 @@
 * [官方TensorFlow训练Word2Vec模型教程](https://www.TensorFlow.org/tutorials/text/word2vec)
 * 在**gensim**框架中使用几行代码训练最常用的嵌入的描述[在此文档](https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html)
 
-## 🚀 [任务：训练Skip-Gram模型](lab/README.md)
+## 🚀 [任务：训练Skip-Gram模型](lab/README_chs.md)
 
-在实验中，我们挑战你修改本课的代码来训练跳词（Skip-gram）模型而不是CBoW。[阅读详情](lab/README.md)
+在实验中，我们挑战你修改本课的代码来训练跳词（Skip-gram）模型而不是CBoW。[阅读详情](lab/README_chs.md)

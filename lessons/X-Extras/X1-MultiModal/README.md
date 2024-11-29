@@ -36,8 +36,8 @@ Open the [Clip.ipynb](Clip.ipynb) notebook to see CLIP in action.
 
 CLIP can also be used for **image generation** from a text prompt. In order to do this, we need a **generator model** that will be able to generate images based on some vector input. One of such models is called [VQGAN](https://compvis.github.io/taming-transformers/) (Vector-Quantized GAN).
 
-The main ideas of VQGAN that differentiate it from ordinary [GAN](../../4-ComputerVision/10-GANs/README.md) are the following:
-* Using autoregressive transformer architecture to generate a sequence of context-rich visual parts that compose the image. Those visual parts are in turn learned by [CNN](../../4-ComputerVision/07-ConvNets/README.md)
+The main ideas of VQGAN that differentiate it from ordinary [GAN](../../4-ComputerVision/10-GANs/README_chs.md) are the following:
+* Using autoregressive transformer architecture to generate a sequence of context-rich visual parts that compose the image. Those visual parts are in turn learned by [CNN](../../4-ComputerVision/07-ConvNets/README_chs.md)
 * Use sub-image discriminator that detects whether parts of the image are "real" of "fake" (unlike the "all-or-nothing" approach in traditional GAN).
 
 Learn more about VQGAN at the [Taming Transformers](https://compvis.github.io/taming-transformers/) web site.

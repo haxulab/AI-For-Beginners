@@ -61,7 +61,7 @@
 
 ## 复习与自学
 
-观看 [这个很棒的视频](https://www.youtube.com/watch?v=qv6UVOQ0F44) 讨论计算机如何使用遗传算法训练的神经网络学习玩超级马里奥。我们将在[下一节](../22-DeepRL/README.md)中了解更多关于计算机学习玩这样的游戏的内容。
+观看 [这个很棒的视频](https://www.youtube.com/watch?v=qv6UVOQ0F44) 讨论计算机如何使用遗传算法训练的神经网络学习玩超级马里奥。我们将在[下一节](../22-DeepRL/README_chs.md)中了解更多关于计算机学习玩这样的游戏的内容。
 
 ## [作业：丢番图方程](Diophantine.ipynb)
 

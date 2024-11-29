@@ -1,4 +1,4 @@
-<!-- BEGIN MICROSOFT SECURITY.MD V0.0.7 BLOCK -->
+<!-- BEGIN MICROSOFT SECURITY_chs.md V0.0.7 BLOCK -->
 
 ## Security
 
@@ -38,4 +38,4 @@ We prefer all communications to be in English.
 
 Microsoft follows the principle of [Coordinated Vulnerability Disclosure](https://aka.ms/opensource/security/cvd).
 
-<!-- END MICROSOFT SECURITY.MD BLOCK -->
+<!-- END MICROSOFT SECURITY_chs.md BLOCK -->

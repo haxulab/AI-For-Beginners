@@ -46,9 +46,9 @@
 
 ## 防止过拟合
 
-深度学习的一个非常重要的方面是能够防止[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting.md)。虽然使用非常强大的神经网络模型可能很诱人，但我们应该始终在模型参数数量和训练样本数量之间找到平衡。
+深度学习的一个非常重要的方面是能够防止[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting_chs.md)。虽然使用非常强大的神经网络模型可能很诱人，但我们应该始终在模型参数数量和训练样本数量之间找到平衡。
 
-> 确保你理解我们早先介绍的[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting.md)概念！
+> 确保你理解我们早先介绍的[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting_chs.md)概念！
 
 有几种防止过拟合的方法：
 
@@ -100,6 +100,6 @@ w<sup>t+1</sup> = w<sup>t</sup> - &eta;(&nabla;&lagran;/||&nabla;&lagran;||)，�
 
 为你的问题选择合适的网络架构可能很棘手。通常的做法是选择已被验证可以用于特定任务（或类似任务）的架构。这里有一篇[神经网络架构简史](https://www.topbots.com/a-brief-history-of-neural-network-architectures/)综述，适用于计算机视觉。
 
-> 重要的是选择适用于我们拥有的训练样本数量的强大架构。选择过于强大的模型可能导致[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting.md)
+> 重要的是选择适用于我们拥有的训练样本数量的强大架构。选择过于强大的模型可能导致[过拟合](../../3-NeuralNetworks/05-Frameworks/Overfitting_chs.md)
 
-另一种好的方法是使用一种将自动调整到所需复杂度的架构。**ResNet** 和 **Inception** 架构在某种程度上是自适应的。[更多计算机视觉架构](../07-ConvNets/CNN_Architectures.md)
+另一种好的方法是使用一种将自动调整到所需复杂度的架构。**ResNet** 和 **Inception** 架构在某种程度上是自适应的。[更多计算机视觉架构](../07-ConvNets/CNN_Architectures_chs.md)

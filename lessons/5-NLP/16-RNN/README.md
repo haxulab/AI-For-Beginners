@@ -81,4 +81,4 @@ Generation with Visual Attention](https://arxiv.org/pdf/1502.03044v2.pdf)
 
 - [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Christopher Olah.
 
-## [Assignment: Notebooks](assignment.md)
+## [Assignment: Notebooks](assignment_chs.md)

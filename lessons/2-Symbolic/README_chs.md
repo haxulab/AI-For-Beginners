@@ -237,4 +237,4 @@ GROUP BY ?eyeColorLabel
 
 通过互联网进行研究，发现人类尝试量化和编码知识的领域。了解布鲁姆分类法（Bloom's Taxonomy），并回顾历史，了解人类如何尝试理解他们的世界。探索林奈（Linnaeus）对生物进行分类的工作，并观察德米特里·门捷列夫（Dmitri Mendeleev）如何为化学元素创建描述和分组的方法。你还能找到哪些有趣的例子？
 
-**作业**: [构建本体](assignment.md)
+**作业**: [构建本体](assignment_chs.md)

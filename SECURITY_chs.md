@@ -1,4 +1,4 @@
-<!-- BEGIN MICROSOFT SECURITY.MD V0.0.7 BLOCK -->
+<!-- BEGIN MICROSOFT SECURITY_chs.md V0.0.7 BLOCK -->
 
 ## 安全性
 
@@ -38,4 +38,4 @@
 
 微软遵循[协调漏洞披露](https://aka.ms/opensource/security/cvd)原则。
 
-<!-- END MICROSOFT SECURITY.MD BLOCK -->
+<!-- END MICROSOFT SECURITY_chs.md BLOCK -->

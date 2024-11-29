@@ -61,6 +61,6 @@
 
 这篇[维基百科文章](https://wikipedia.org/wiki/Image_segmentation)对这种技术的各种应用提供了很好的概述。自己更多地了解一下实例分割和全景分割的细分领域。
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
 在这个实验中，尝试使用 Kaggle 上的[Segmentation Full Body MADS 数据集](https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset)进行**人体分割**。

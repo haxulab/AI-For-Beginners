@@ -78,9 +78,9 @@ Proceed to the [OwnFramework](OwnFramework.ipynb) notebook and work through it.
 
 Backpropagation is a common algorithm used in AI and ML, worth studying [in more detail](https://wikipedia.org/wiki/Backpropagation)
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, you are asked to use the framework you constructed in this lesson to solve MNIST handwritten digit classification.
 
-* [Instructions](lab/README.md)
+* [Instructions](lab/README_chs.md)
 * [Notebook](lab/MyFW_MNIST.ipynb)

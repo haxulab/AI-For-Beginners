@@ -78,7 +78,7 @@
 
  * 增加训练数据量
  * 减少模型的复杂度
- * 使用某种[正则化技术](../../4-ComputerVision/08-TransferLearning/TrainingTricks.md)，例如[Dropout](../../4-ComputerVision/08-TransferLearning/TrainingTricks.md#Dropout)，我们稍后会考虑这些技术。
+ * 使用某种[正则化技术](../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md)，例如[Dropout](../../4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md#Dropout)，我们稍后会考虑这些技术。
 
 ## 过拟合和偏差-方差权衡
 
@@ -112,9 +112,9 @@
 - TensorFlow和PyTorch的区别是什么？
 - 过拟合和欠拟合的区别是什么？
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
 在本实验中，您需要使用PyTorch或TensorFlow解决两个分类问题，使用单层和多层完全连接的网络。
 
-* [说明](lab/README.md)
+* [说明](lab/README_chs.md)
 * [笔记本](lab/LabFrameworks.ipynb)

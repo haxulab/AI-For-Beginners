@@ -1,53 +1,57 @@
-site_name: AI for Beginner
+site_name: 人工智能初学者课程
 docs_dir: .
+site_dir: ../
+
 nav:
-  - 人工智能初学者课程: README_chs.md
-  - 课程:
-    - 课程设置:
-      - 给教育者: lessons/0-course-setup/for-teachers_chs.md
-    - 人工智能简介: 
-      - lessons/1-Intro/README_chs.md
-      - lessons/1-Intro/assignment_chs.md
-    - 知识表示与专家系统: 
-      - lessons/2-Symbolic/README_chs.md
-      - lessons/2-Symbolic/assignment_chs.md
-    - 神经网络: 
-      - lessons/3-NeuralNetworks/README_chs.md
-      - lessons/3-NeuralNetworks/03-Perceptron/README_chs.md
-      - lessons/3-NeuralNetworks/04-OwnFramework/README_chs.md
-      - lessons/3-NeuralNetworks/05-Frameworks/README_chs.md
-    - 计算机视觉: 
-      - lessons/4-ComputerVision/06-IntroCV/README_chs.md
-      - 卷积神经网络:
-        - lessons/4-ComputerVision/07-ConvNets/CNN_Architectures_chs.md
-        - lessons/4-ComputerVision/07-ConvNets/README_chs.md
-      - 迁移学习:
-        - lessons/4-ComputerVision/08-TransferLearning/README_chs.md
-        - lessons/4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md
-      - lessons/4-ComputerVision/09-Autoencoders/README_chs.md
-      - lessons/4-ComputerVision/10-GANs/README_chs.md
-      - lessons/4-ComputerVision/11-ObjectDetection/README_chs.md
-      - lessons/4-ComputerVision/12-Segmentation/README_chs.md
-    - 自然语言处理: 
-      - lessons/5-NLP/13-TextRep/README_chs.md
-      - lessons/5-NLP/14-Embeddings/README_chs.md
-      - lessons/5-NLP/15-LanguageModeling/README_chs.md
-      - lessons/5-NLP/16-RNN/README_chs.md
-      - lessons/5-NLP/17-GenerativeNetworks/README_chs.md
-      - lessons/5-NLP/18-Transformers/README_chs.md
-      - lessons/5-NLP/19-NER/README_chs.md
-      - lessons/5-NLP/20-LangModels/README_chs.md
-    - 其他技术: 
-      - lessons/6-Other/21-GeneticAlgorithms/README_chs.md
-      - lessons/6-Other/22-DeepRL/README_chs.md
-      - lessons/6-Other/23-MultiagentSystems/README_chs.md
-    - AI伦理: 
-      - lessons/7-Ethics/README_chs.md
-    - 额外内容: 
-      - lessons/X-Extras/README_chs.md
+  - 课程介绍: README_chs.md
+  - 课程设置:
+    - lessons/0-course-setup/for-teachers_chs.md
+    - lessons/0-course-setup/how-to-run_chs.md
+    - lessons/0-course-setup/setup_chs.md
+  - 人工智能简介: 
+    - lessons/1-Intro/README_chs.md
+    - lessons/1-Intro/assignment_chs.md
+  - 知识表示与专家系统: 
+    - lessons/2-Symbolic/README_chs.md
+    - lessons/2-Symbolic/assignment_chs.md
+  - 神经网络: 
+    - lessons/3-NeuralNetworks/README_chs.md
+    - lessons/3-NeuralNetworks/03-Perceptron/README_chs.md
+    - lessons/3-NeuralNetworks/04-OwnFramework/README_chs.md
+    - lessons/3-NeuralNetworks/05-Frameworks/README_chs.md
+  - 计算机视觉: 
+    - lessons/4-ComputerVision/06-IntroCV/README_chs.md
+    - 卷积神经网络:
+      - lessons/4-ComputerVision/07-ConvNets/CNN_Architectures_chs.md
+      - lessons/4-ComputerVision/07-ConvNets/README_chs.md
+    - 迁移学习:
+      - lessons/4-ComputerVision/08-TransferLearning/README_chs.md
+      - lessons/4-ComputerVision/08-TransferLearning/TrainingTricks_chs.md
+    - lessons/4-ComputerVision/09-Autoencoders/README_chs.md
+    - lessons/4-ComputerVision/10-GANs/README_chs.md
+    - lessons/4-ComputerVision/11-ObjectDetection/README_chs.md
+    - lessons/4-ComputerVision/12-Segmentation/README_chs.md
+  - 自然语言处理: 
+    - lessons/5-NLP/13-TextRep/README_chs.md
+    - lessons/5-NLP/14-Embeddings/README_chs.md
+    - lessons/5-NLP/15-LanguageModeling/README_chs.md
+    - lessons/5-NLP/16-RNN/README_chs.md
+    - lessons/5-NLP/17-GenerativeNetworks/README_chs.md
+    - 注意机制和Transformer: lessons/5-NLP/18-Transformers/READMEtransformers_chs
+    - lessons/5-NLP/19-NER/README_chs.md
+    - 预训练大语言模型: lessons/5-NLP/20-LangModels/READMELargeLang_chs
+  - 其他技术: 
+    - lessons/6-Other/21-GeneticAlgorithms/README_chs.md
+    - lessons/6-Other/22-DeepRL/README_chs.md
+    - lessons/6-Other/23-MultiagentSystems/README_chs.md
+  - AI伦理: 
+    - lessons/7-Ethics/README_chs.md
+  - 额外内容: 
+    - lessons/X-Extras/README_chs.md
 
 plugins:
   - search
   - same-dir
   - awesome-pages
-theme: readthedocs
+theme:
+  name: material

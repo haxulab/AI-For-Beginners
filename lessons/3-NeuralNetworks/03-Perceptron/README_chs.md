@@ -83,9 +83,9 @@ def train(positive_examples, negative_examples, num_iterations = 100, eta = 1):
 
 这里有一篇有趣的[关于感知器的文章](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590)。
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
 在本课中，我们实现了一个用于二分类任务的感知器，并用它来区分类似于手写数字的两类。在这个实验中，你需要完整地解决数字分类问题，即确定给定图像最有可能对应的数字。
 
-* [说明](lab/README.md)
+* [说明](lab/README_chs.md)
 * [笔记本](lab/PerceptronMultiClass.ipynb)

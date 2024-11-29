@@ -62,4 +62,4 @@ Word2Vec已被用于一些有趣的应用，包括生成歌词和诗歌。请查
 
 阅读这篇关于Word2Vec的论文：[在向量空间中高效估计词语表示](https://arxiv.org/pdf/1301.3781.pdf)
 
-## [作业：笔记本](assignment.md)
+## [作业：笔记本](assignment_chs.md)

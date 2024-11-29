@@ -70,7 +70,7 @@ RL算法的目标是训练一个模型——所谓的**策略** &pi;——它将
 * 策略，决定采取哪个动作。这部分称为**actor**
 * 我们可以在该状态下预计获得的总奖励估计——这一部分称为**critic**。
 
-在某种意义上，这种架构类似于[生成对抗网络](../../4-ComputerVision/10-GANs/README.md)，其中有两个相互对抗训练的网络。在actor-critic模型中，actor提出我们需要采取的动作，critic尝试批评并估计结果。然而，我们的目标是联合训练这些网络。
+在某种意义上，这种架构类似于[生成对抗网络](../../4-ComputerVision/10-GANs/README_chs.md)，其中有两个相互对抗训练的网络。在actor-critic模型中，actor提出我们需要采取的动作，critic尝试批评并估计结果。然而，我们的目标是联合训练这些网络。
 
 因为我们在实验中知道真实的累积奖励和critic返回的结果，构建一个最小化它们之间差异的损失函数相对容易。这将给我们**critic损失**。我们可以使用策略梯度算法中的相同方法计算**actor损失**。
 
@@ -105,10 +105,10 @@ RL算法的目标是训练一个模型——所谓的**策略** &pi;——它将
 
 ## 回顾与自学
 
-在我们的[初学者机器学习课程](https://github.com/microsoft/ML-For-Beginners/blob/main/8-Reinforcement/README.md)中了解更多关于经典强化学习的内容。
+在我们的[初学者机器学习课程](https://github.com/microsoft/ML-For-Beginners/blob/main/8-Reinforcement/README_chs.md)中了解更多关于经典强化学习的内容。
 
 观看[这个精彩的视频](https://www.youtube.com/watch?v=qv6UVOQ0F44)，了解一台计算机如何学习玩Super Mario。
 
-## 作业: [训练山地车](lab/README.md)
+## 作业: [训练山地车](lab/README_chs.md)
 
 在这个作业中，你的目标是训练一个不同的Gym环境——[Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/)。

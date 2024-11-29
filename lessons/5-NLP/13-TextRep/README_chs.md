@@ -16,7 +16,7 @@
 
 如果我们想用神经网络解决自然语言处理（NLP）任务，我们需要某种方法将文本表示为张量。计算机已经使用诸如ASCII或UTF-8之类的编码，将文本字符表示为映射到屏幕字体的数字。
 
-<img alt="展示将字符映射为ASCII和二进制表示的图示" src="images/ascii-character-map.png" width="50%"/>
+![展示将字符映射为ASCII和二进制表示的图示](images/ascii-character-map.png)
 
 > [图片来源](https://www.seobility.net/en/wiki/ASCII)
 
@@ -39,7 +39,7 @@
 
 在解决诸如文本分类之类的任务时，我们需要能够使用一个固定大小的向量表示文本，我们将使用该向量作为最终密集分类器的输入。最简单的方法之一是结合所有单词的表示，例如通过将它们相加。如果我们对每个单词的one-hot编码求和，我们将得到一个频率向量，显示每个单词在文本中出现的次数。这种文本表示称为**词袋**（BoW）。
 
-<img src="images/bow.png" width="90%"/>
+![词袋示意图](images/bow.png)
 
 > 图片作者自制
 
@@ -70,4 +70,4 @@ BoW的问题在于某些常见单词，如*and*和*is*，出现在大多数文�
 
 在[Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste)上练习你的文本嵌入和词袋技术技能
 
-## [作业：笔记本](assignment.md)
+## [作业：笔记本](assignment_chs.md)

@@ -10,11 +10,11 @@ There are folders in each lesson folder and lesson introduction folder which con
 
 Translated files should follow this naming convention:
 
-**README._[language]_.md**
+**README._[language]__chs.md**
 
-where _[language]_ is a two letter language abbreviation following the ISO 639-1 standard (e.g. `README.es.md` for Spanish and `README.nl.md` for Dutch).
+where _[language]_ is a two letter language abbreviation following the ISO 639-1 standard (e.g. `README.es_chs.md` for Spanish and `README.nl_chs.md` for Dutch).
 
-**assignment._[language]_.md**
+**assignment._[language]__chs.md**
 
 Similar to Readme's, please translate the assignments as well.
 
@@ -26,7 +26,7 @@ Similar to Readme's, please translate the assignments as well.
 
 3. Edit the quiz-app's [translations index.js file](https://github.com/microsoft/AI-For-Beginners/blob/main/etc/quiz-app/src/assets/translations/index.js) to add your language.
 
-4. Finally, edit ALL the quiz links in your translated README.md files to point directly to your translated quiz: https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1 becomes https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1?loc=id
+4. Finally, edit ALL the quiz links in your translated README_chs.md files to point directly to your translated quiz: https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1 becomes https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1?loc=id
 
 **THANK YOU**
 

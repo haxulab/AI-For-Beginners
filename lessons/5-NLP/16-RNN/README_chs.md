@@ -22,7 +22,7 @@
 
 一个简单的RNN单元里面有两个权重矩阵：一个用于转换输入符号（称为W），另一个用于转换输入状态（称为H）。在这种情况下，网络的输出计算为&sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b)，其中&sigma;是激活函数，b是附加的偏置。
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+![RNN Cell Anatomy](images/rnn-anatomy.png)
 
 > 图片作者所有
 
@@ -80,4 +80,4 @@ LSTM网络的组织方式类似于RNN，但有两个状态在层与层之间传�
 
 - [理解LSTM网络](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Christopher Olah.
 
-## [作业：笔记本](assignment.md)
+## [作业：笔记本](assignment_chs.md)

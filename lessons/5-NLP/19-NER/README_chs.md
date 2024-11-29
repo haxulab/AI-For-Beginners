@@ -8,7 +8,7 @@
 
 假设你想开发一个类似于Amazon Alexa或Google Assistant的自然语言聊天机器人。智能聊天机器人的工作方式是通过对输入句子进行文本分类来*理解*用户的需求。这个分类的结果被称为**意图**，它决定了聊天机器人应该做什么。
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+![Bot NER](images/bot-ner.png)
 
 > 图片由作者提供
 
@@ -75,6 +75,6 @@ Token | Tag
 
 阅读博客[递归神经网络的非凡有效性](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)并按照文章中的深入阅读部分进行学习，以加深你的知识。
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
-在本课的作业中，你需要训练一个医学实体识别模型。你可以从训练LSTM模型开始，正如本课所述，然后使用BERT转换器模型。阅读[指示](lab/README.md)以获取所有详情。
+在本课的作业中，你需要训练一个医学实体识别模型。你可以从训练LSTM模型开始，正如本课所述，然后使用BERT转换器模型。阅读[指示](lab/README_chs.md)以获取所有详情。

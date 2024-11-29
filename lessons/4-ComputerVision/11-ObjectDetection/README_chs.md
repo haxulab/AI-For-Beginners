@@ -172,4 +172,4 @@ YOLO是一种实时的一通道算法。主要思想如下：
 * [基础目标检测算法的逐步介绍](https://www.analyticsvidhya.com/blog/2018/10/a-step-by-step-introduction-to-the-basic-object-detection-algorithms-part-1/)
 * [在Python中实现Faster R-CNN进行目标检测](https://www.analyticsvidhya.com/blog/2018/11/implementation-faster-r-cnn-python-object-detection/)
 
-## [作业：目标检测](lab/README.md)
+## [作业：目标检测](lab/README_chs.md)

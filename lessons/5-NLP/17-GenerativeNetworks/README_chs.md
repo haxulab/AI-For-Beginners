@@ -27,7 +27,7 @@
 
 在生成文本（推理过程中），我们从一些**提示**开始，将其传递通过RNN单元以生成其中间状态，然后从该状态开始生成。我们一次生成一个字符，并将状态和生成的字符传递给另一个RNN单元以生成下一个字符，直到生成足够的字符。
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+![显示生成单词'HELLO'的示例RNN的图片](images/rnn-generate-inf.png)
 
 > 作者提供的图片
 
@@ -71,6 +71,6 @@ today of the second the company and a second the company ...
 * 不同方法生成文本：马尔可夫链、LSTM和GPT-2: [博文](https://towardsdatascience.com/text-generation-gpt-2-lstm-markov-chain-9ea371820e1e)
 * [Keras文档](https://keras.io/examples/generative/lstm_character_level_text_generation/)中的文本生成示例
 
-## [作业](lab/README.md)
+## [作业](lab/README_chs.md)
 
 我们已经看到了如何逐字生成文本。在实验中，你将探索词级别的文本生成。

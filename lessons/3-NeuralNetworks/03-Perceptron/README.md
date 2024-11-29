@@ -85,9 +85,9 @@ To see how we can use perceptron to solve a toy problem as well as real-life pro
 Here's an interesting [article about perceptrons](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590
 ) as well.
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lesson, we have implemented a perceptron for binary classification task, and we have used it to classify between two handwritten digits. In this lab, you are asked to solve the problem of digit classification entirely, i.e. determine which digit is most likely to correspond to a given image.
 
-* [Instructions](lab/README.md)
+* [Instructions](lab/README_chs.md)
 * [Notebook](lab/PerceptronMultiClass.ipynb)

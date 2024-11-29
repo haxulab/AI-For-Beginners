@@ -55,4 +55,4 @@ As an example, let's look at the architecture of VGG-16, a network that achieved
 
 ## Best-Known CNN Architectures
 
-[Continue your study about the best-known CNN architectures](CNN_Architectures.md)
+[Continue your study about the best-known CNN architectures](CNN_Architectures_chs.md)

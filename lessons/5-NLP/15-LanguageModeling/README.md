@@ -38,6 +38,6 @@ In the previous lesson we have seen that words embeddings work like magic! Now w
 * [Official TensorFlow tutorial on training Word2Vec model](https://www.TensorFlow.org/tutorials/text/word2vec).
 * Using the **gensim** framework to train most commonly used embeddings in a few lines of code is described [in this documentation](https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html).
 
-## 🚀 [Assignment: Train Skip-Gram Model](lab/README.md)
+## 🚀 [Assignment: Train Skip-Gram Model](lab/README_chs.md)
 
-In the lab, we challenge you to modify the code from this lesson to train skip-gram model instead of CBoW. [Read the details](lab/README.md)
+In the lab, we challenge you to modify the code from this lesson to train skip-gram model instead of CBoW. [Read the details](lab/README_chs.md)

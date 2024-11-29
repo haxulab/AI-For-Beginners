@@ -6,7 +6,7 @@
 
 One of the simplest tasks of computer vision is **image classification**.
 
-Computer vision is often considered to be a branch of AI. Nowadays, most of computer vision tasks are solved using neural networks. We will learn more about the special type of neural networks used for computer vision, [convolutional neural networks](../07-ConvNets/README.md), throughout this section.
+Computer vision is often considered to be a branch of AI. Nowadays, most of computer vision tasks are solved using neural networks. We will learn more about the special type of neural networks used for computer vision, [convolutional neural networks](../07-ConvNets/README_chs.md), throughout this section.
 
 However, before you pass the image to a neural network, in many cases it makes sense to use some algorithmic techniques to enhance the image.
 
@@ -102,7 +102,7 @@ Watch [this video](https://docs.microsoft.com/shows/ai-show/ai-show--2021-opencv
 
 Read more on optical flow [in this great tutorial](https://learnopencv.com/optical-flow-in-opencv/).
 
-## [Assignment](lab/README.md)
+## [Assignment](lab/README_chs.md)
 
 In this lab, you will take a video with simple gestures, and your goal is to extract up/down/left/right movements using optical flow.
 

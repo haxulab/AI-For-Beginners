@@ -44,4 +44,4 @@ model = BertForTokenClassification.from_pretrained(model_name, classes)
 
 ## 收获
 
-这个任务非常接近实际中的任务，如果您想深入分析大量自然语言文本。在我们的案例中，我们可以将我们训练的模型应用于[与COVID相关的论文数据集](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)，看看我们能得到哪些见解。[这篇博客文章](https://soshnikov.com/science/analyzing-medical-papers-with-azure-and-text-analytics-for-health/) 和 [这篇论文](https://www.mdpi.com/2504-2289/6/1/4) 描述了使用NER在这批文献语料库上可以进行的研究。
+这个任务非常接近实际中的任务，如果您想深入分析大量自然语言文本。在我们的案例中，我们可以将我们训练的模型应用于[与COVID相关的论文数据集](https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge)，看看我们能得到哪些见解。[这篇博客文章](https://soshnikov.com/science/analyzing-medical-papers-with-azure-and-text-analytics-for-health/) 和 [这篇论文](https://www_chs.mdpi.com/2504-2289/6/1/4) 描述了使用NER在这批文献语料库上可以进行的研究。

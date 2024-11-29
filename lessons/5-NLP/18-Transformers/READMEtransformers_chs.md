@@ -47,7 +47,7 @@ Transformer背后的主要想法之一是避免RNN的顺序性质，并创建一
 * 可训练嵌入，类似于标记嵌入。这是我们考虑的方法。我们在标记和它们的位置上应用嵌入层，得到相同维度的嵌入向量，然后将它们加在一起。
 * 固定位置编码函数，如原始论文所提议的。
 
-<img src="images/pos-embedding.png" width="50%"/>
+![位置编码示意图](images/pos-embedding.png)
 
 > 作者提供的图片
 
@@ -106,4 +106,4 @@ Transformer背后的主要想法之一是避免RNN的顺序性质，并创建一
 * [博客文章](https://mchromiak.github.io/articles/2017/Sep/12/Transformer-Attention-is-all-you-need/)，解释经典的[Attention is all you need](https://arxiv.org/abs/1706.03762)论文，关于Transformer。
 * [一系列博客文章](https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460452)，详细解释Transformer的架构。
 
-## [作业](assignment.md)
+## [作业](assignment_chs.md)

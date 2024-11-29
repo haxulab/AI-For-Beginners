@@ -10,11 +10,11 @@
 
 翻译文件应遵循以下命名约定：
 
-**README._[language]_.md**
+**README._[language]__chs.md**
 
-其中_[language]_是遵循ISO 639-1标准的两字母语言缩写（例如，西班牙语为`README.es.md`，荷兰语为`README.nl.md`）。
+其中_[language]_是遵循ISO 639-1标准的两字母语言缩写（例如，西班牙语为`README.es_chs.md`，荷兰语为`README.nl_chs.md`）。
 
-**assignment._[language]_.md**
+**assignment._[language]__chs.md**
 
 类似于Readme，请也翻译作业。
 
@@ -26,7 +26,7 @@
 
 3. 编辑quiz-app的[translations index.js文件](https://github.com/microsoft/AI-For-Beginners/blob/main/etc/quiz-app/src/assets/translations/index.js)以添加您的语言。
 
-4. 最后，编辑您翻译的README.md文件中的所有测验链接，直接指向您翻译后的测验：https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1 变为 https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1?loc=id
+4. 最后，编辑您翻译的README_chs.md文件中的所有测验链接，直接指向您翻译后的测验：https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1 变为 https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/1?loc=id
 
 **谢谢**
 

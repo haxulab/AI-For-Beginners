@@ -58,9 +58,9 @@ if len(physical_devices)>0:
 ## 本节内容
 在本节中，我们将学习：
 
-* [将文本表示为张量](13-TextRep/README.md)
-* [词嵌入](14-Emdeddings/README.md)
-* [语言建模](15-LanguageModeling/README.md)
-* [循环神经网络](16-RNN/README.md)
-* [生成网络](17-GenerativeNetworks/README.md)
-* [变压器](18-Transformers/README.md)
+* [将文本表示为张量](13-TextRep/README_chs.md)
+* [词嵌入](14-Emdeddings/README_chs.md)
+* [语言建模](15-LanguageModeling/README_chs.md)
+* [循环神经网络](16-RNN/README_chs.md)
+* [生成网络](17-GenerativeNetworks/README_chs.md)
+* [变压器](18-Transformers/README_chs.md)
