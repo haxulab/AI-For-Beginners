@@ -1,6 +1,5 @@
 site_name: 人工智能初学者课程
 docs_dir: .
-site_dir: ../
 
 nav:
   - 课程介绍: README_chs.md
