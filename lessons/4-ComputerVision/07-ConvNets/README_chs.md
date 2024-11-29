@@ -15,7 +15,7 @@
 
 例如，如果我们将3x3的纵向边缘和横向边缘滤波器应用于MNIST数字，我们可以在原始图像中存在纵向和横向边缘的位置获得高亮度（例如高值）。因此，这两个滤波器可以用来“查找”边缘。同样，我们可以设计不同的滤波器来查找其他低级模式：
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+![Leung-Malik滤波器组](images/lmfilters.jpg)
 
 > [Leung-Malik滤波器组](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)图像
 

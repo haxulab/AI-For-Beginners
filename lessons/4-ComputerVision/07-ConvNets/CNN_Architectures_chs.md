@@ -16,7 +16,7 @@ VGG-16 是一个在 2014 年 ImageNet top-5 分类中达到了 92.7% 准确率�
 
 ResNet 是微软研究院在 2015 年提出的一系列模型。ResNet 的主要思想是使用**残差块**：
 
-<img src="images/resnet-block.png" width="300"/>
+![ResNet Block](images/resnet-block.png)
 
 > 图片来自 [这篇论文](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -28,7 +28,7 @@ ResNet 是微软研究院在 2015 年提出的一系列模型。ResNet 的主要
 
 Google Inception 架构更进一步，将每个网络层构建为多个不同路径的组合：
 
-<img src="images/inception.png" width="400"/>
+![Inception](images/inception.png)
 
 > 图片来自 [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

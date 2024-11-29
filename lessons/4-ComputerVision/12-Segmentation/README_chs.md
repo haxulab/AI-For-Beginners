@@ -11,7 +11,7 @@
 
 对于实例分割，这些绵羊是不同的物体，但对于语义分割，所有绵羊都代表一个类别。
 
-<img src="images/instance_vs_semantic.jpeg" width="50%">
+![Instance vs Semantic Segmentation](images/instance_vs_semantic.jpeg)
 
 > 图片来自[这篇博客](https://nirmalamurali.medium.com/image-classification-vs-semantic-segmentation-vs-instance-segmentation-625c33a08d50)
 
@@ -20,7 +20,7 @@
 * **编码器** 从输入图像中提取特征
 * **解码器** 将这些特征转换为具有相同大小和相应类别数量的**掩码图像**。
 
-<img src="images/segm.png" width="80%">
+![Segmentation Example](images/segm.png)
 
 > 图片来自[这篇出版物](https://arxiv.org/pdf/2001.05566.pdf)
 
@@ -34,7 +34,7 @@
 
 > ✅ 这种技术特别适合这种类型的医学成像，但你还可以想象它有哪些其他的实际应用？
 
-<img alt="navi" src="images/navi.png"/>
+![navi](images/navi.png)
 
 > 图片来自 PH<sup>2</sup> 数据库
 

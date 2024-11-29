@@ -37,7 +37,7 @@ VAE 是一种学习预测*潜在参数*的*统计分布*的自动编码器，即
 * 我们从分布 N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) 中抽取一个向量 `sample`
 * 解码器尝试使用 `sample` 作为输入向量解码原始图像
 
- <img src="images/vae.png" width="50%">
+![VAE](images/vae.png)
 
 > 图片来自 [这个博客帖子](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) 由 Isaak Dykeman 撰写
 
@@ -48,13 +48,13 @@ VAE 是一种学习预测*潜在参数*的*统计分布*的自动编码器，即
 
 VAE 的一个重要优点是我们可以相对轻松地生成新图像，因为我们知道从何种分布中抽取潜在向量。例如，如果我们在 MNIST 上训练带有 2D 潜在向量的 VAE，我们可以随着潜在向量组件的变化得到不同的数字：
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+![vaemnist](images/vaemnist.png)
 
 > 图片由 [Dmitry Soshnikov](http://soshnikov.com) 提供
 
 观察如何图像相互融合，因为我们开始从潜在参数空间的不同部分获取潜在向量。我们还可以在 2D 中可视化此空间：
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+![vaemnist cluster](images/vaemnist-diag.png)
 
 > 图片由 [Dmitry Soshnikov](http://soshnikov.com) 提供
 

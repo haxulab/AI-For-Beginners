@@ -8,7 +8,7 @@
 
 GAN 的主要想法是让两个神经网络相互对抗进行训练：
 
-<img src="images/gan_architecture.png" width="70%"/>
+![GAN Architecture](images/gan_architecture.png)
 
 > 图片来自 [Dmitry Soshnikov](http://soshnikov.com)
 
@@ -32,7 +32,7 @@ CNN 判别器由以下层组成：几个卷积+池化层（具有递减的空间
 
 > ✅ 因为卷积层作为遍历图像的线性滤波器被实现，反卷积本质上类似于卷积，可以使用相同的层逻辑来实现。
 
-<img src="images/gan_arch_detail.png" width="70%"/>
+![GAN Architecture Detail](images/gan_arch_detail.png)
 
 > 图片来自 [Dmitry Soshnikov](http://soshnikov.com)
 
