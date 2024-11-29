@@ -1,6 +1,6 @@
 # 多模态网络
 
-在变压器模型成功解决NLP任务之后，同样或相似的架构被应用于计算机视觉任务。现在越来越多的人对构建能够*结合*视觉和自然语言能力的模型感兴趣。OpenAI对此做了一些尝试，其中一个被称为CLIP和DALL.E。
+在transformer模型成功解决NLP任务之后，同样或相似的架构被应用于计算机视觉任务。现在越来越多的人对构建能够*结合*视觉和自然语言能力的模型感兴趣。OpenAI对此做了一些尝试，其中一个被称为CLIP和DALL.E。
 
 ## 对比图像预训练（CLIP）
 
@@ -37,7 +37,7 @@ CLIP模型/库可以从[OpenAI GitHub](https://github.com/openai/CLIP)获取。�
 CLIP还可以用于从文本提示生成**图像**。为此，我们需要一个**生成器模型**，它能够根据一些向量输入生成图像。这样的模型之一称为[VQGAN](https://compvis.github.io/taming-transformers/)（矢量量化GAN）。
 
 VQGAN区别于普通[GAG](../../4-ComputerVision/10-GANs/README_chs.md)的主要思想如下：
-* 使用自回归变压器架构生成组成图像的情境丰富的视觉序列。这些视觉部分由[CNN](../../4-ComputerVision/07-ConvNets/README_chs.md)学习。
+* 使用自回归transformer架构生成组成图像的情境丰富的视觉序列。这些视觉部分由[CNN](../../4-ComputerVision/07-ConvNets/README_chs.md)学习。
 * 使用子图像判别器检测图像部分是“真实”还是“伪造”的（与传统GAN的“全或不全”方法不同）。
 
 通过访问[Taming Transformers](https://compvis.github.io/taming-transformers/)网站了解更多关于VQGAN的信息。
@@ -72,5 +72,5 @@ DALL.E 1和2之间的主要区别是，DALL-E 2生成的图像和艺术作品更
 
 ## 参考文献
 
-* VQGAN论文：[用于高分辨率图像合成的驯化变压器](https://compvis.github.io/taming-transformers/paper/paper.pdf)
+* VQGAN论文：[用于高分辨率图像合成的驯化transformer](https://compvis.github.io/taming-transformers/paper/paper.pdf)
 * CLIP论文：[从自然语言监督中学习可转移的视觉模型](https://arxiv.org/pdf/2103.00020.pdf)

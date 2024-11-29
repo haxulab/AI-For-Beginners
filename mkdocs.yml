@@ -46,8 +46,8 @@ nav:
     - lessons/6-Other/23-MultiagentSystems/README_chs.md
   - AI伦理: 
     - lessons/7-Ethics/README_chs.md
-  - 额外内容: 
-    - lessons/X-Extras/README_chs.md
+  - 多模态网络:
+    - lessons/X-Extras/X1-MultiModal/README_chs.md
 
 plugins:
   - search

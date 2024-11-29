@@ -56,7 +56,7 @@
      - LSTM
      - GRU
  - [生成式循环网络](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/README_chs.md)
- - [变压器和 BERT](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/README_chs.md)
+ - [transformer和 BERT](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/README_chs.md)
  - [命名实体识别](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/19-NER/README_chs.md)
  - [文本生成和 GPT](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/20-LanguageModels/README_chs.md)
 ## 其他技术
