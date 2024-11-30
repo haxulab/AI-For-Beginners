@@ -51,6 +51,5 @@ nav:
 plugins:
   - search
   - same-dir
-  - awesome-pages
-theme:
-  name: material
+
+theme: readthedocs
