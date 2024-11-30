@@ -1,8 +1,7 @@
 site_name: 人工智能初学者课程
-docs_dir: .
 
 nav:
-  - 课程介绍: README_chs.md
+  - 课程介绍: index.md
   - 课程设置:
     - lessons/0-course-setup/for-teachers_chs.md
     - lessons/0-course-setup/how-to-run_chs.md
@@ -36,9 +35,9 @@ nav:
     - lessons/5-NLP/15-LanguageModeling/README_chs.md
     - lessons/5-NLP/16-RNN/README_chs.md
     - lessons/5-NLP/17-GenerativeNetworks/README_chs.md
-    - 注意机制和Transformer: lessons/5-NLP/18-Transformers/READMEtransformers_chs
+    - 注意机制和Transformer: lessons/5-NLP/18-Transformers/READMEtransformers_chs.md
     - lessons/5-NLP/19-NER/README_chs.md
-    - 预训练大语言模型: lessons/5-NLP/20-LangModels/READMELargeLang_chs
+    - 预训练大语言模型: lessons/5-NLP/20-LangModels/READMELargeLang_chs.md
   - 其他技术: 
     - lessons/6-Other/21-GeneticAlgorithms/README_chs.md
     - lessons/6-Other/22-DeepRL/README_chs.md
@@ -50,6 +49,5 @@ nav:
 
 plugins:
   - search
-  - same-dir
 
 theme: material
